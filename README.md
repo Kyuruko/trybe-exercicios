@@ -1,3 +1,1 @@
-# Meu repositório de exercícios Trybe
-
-Aqui estará todos os exercicios das sessões do curso da Trybe.
+# Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Bruno Costa Krumreich](https://www.linkedin.com/in/bruno-costa-k/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
