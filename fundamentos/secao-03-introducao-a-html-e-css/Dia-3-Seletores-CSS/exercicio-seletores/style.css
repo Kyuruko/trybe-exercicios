@@ -1,0 +1,15 @@
+body{
+    width: 100%;
+}
+h1, p{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+li:hover{
+    background-color: tomato;
+    font-family: fantasy;
+}
+ol, ul{
+    list-style: none;
+}
