@@ -155,43 +155,43 @@
 //     console.log("valor inválido")
 // }
 
-// let salario = 2000;
-// let salarioInss = 0;
-// let salarioLiq = 0
+let salrio = 2000;
+let salarioInss = 0;
+let salarioLiq = 0;
 
-// if (salario <= 1556.94) {
-//   console.log(salario + "a");
-//   salarioInss = salario - salario * (11 / 100);
-// }
-// if (salario >= 1556.95 && salario <= 2594.92) {
-//   console.log(salario + "b");
-//   salarioInss = salario - salario * (11 / 100);
-// }
-// if (salario >= 2594.93 && salario <= 5189.82) {
-//   console.log(salario + "c");
-//   salarioInss = salario - salario * (11 / 100);
-// }
-// if (salario > 5189.82) {
-//   console.log(salario + "d");
-//   salarioInss = salario - 570.88;
-// }
+if (salario <= 1556.94) {
+  console.log(salario + "a");
+  salarioInss = salario - salario * (11 / 100);
+}
+if (salario >= 1556.95 && salario <= 2594.92) {
+  console.log(salario + "b");
+  salarioInss = salario - salario * (11 / 100);
+}
+if (salario >= 2594.93 && salario <= 5189.82) {
+  console.log(salario + "c");
+  salarioInss = salario - salario * (11 / 100);
+}
+if (salario > 5189.82) {
+  console.log(salario + "d");
+  salarioInss = salario - 570.88;
+}
 
-// if (salarioInss <= 1903.98) {
-//   console.log(salarioInss);
-// }
-// if (salarioInss >= 1903.99 && salarioInss <= 2826.65) {
-//     salarioLiq = salarioInss - ((salarioInss * (7.5/100)) - 142.80);
-//     console.log(salarioLiq);
-// }
-// if (salarioInss >= 2826.66 && salarioInss <= 3751.05) {
-//     salarioLiq = salarioInss - ((salarioInss * (15/100)) - 354.80);
-//     console.log(salarioLiq);
-// }
-// if (salarioInss >= 3751.06 && salarioInss <= 4664.68) {
-//     salarioLiq = salarioInss - ((salarioInss * (22.5/100)) - 636.13);
-//     console.log(salarioLiq);
-// }
-// if (salarioInss > 4664.68) {
-//     salarioLiq = salarioInss - ((salarioInss * (27.5/100)) - 869.36);
-//     console.log(salarioLiq);
-// }
+if (salarioInss <= 1903.98) {
+  console.log(salarioInss);
+}
+if (salarioInss >= 1903.99 && salarioInss <= 2826.65) {
+    salarioLiq = salarioInss - ((salarioInss * (7.5/100)) - 142.80);
+    console.log(salarioLiq);
+}
+if (salarioInss >= 2826.66 && salarioInss <= 3751.05) {
+    salarioLiq = salarioInss - ((salarioInss * (15/100)) - 354.80);
+    console.log(salarioLiq);
+}
+if (salarioInss >= 3751.06 && salarioInss <= 4664.68) {
+    salarioLiq = salarioInss - ((salarioInss * (22.5/100)) - 636.13);
+    console.log(salarioLiq);
+}
+if (salarioInss > 4664.68) {
+    salarioLiq = salarioInss - ((salarioInss * (27.5/100)) - 869.36);
+    console.log(salarioLiq);
+}
