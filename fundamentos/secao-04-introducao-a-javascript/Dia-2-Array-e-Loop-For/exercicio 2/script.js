@@ -14,12 +14,14 @@ for (j=0;j<numbers.length-1;j++){
     }
 }
 console.log(numbers)
+
 arr = []
 for (i=0; i<numbers.length;i++){
-    if (i + 1 < numbers.length) {
+    if(i + 1 < numbers.length){
         arr.push(numbers[i] * numbers[i+1])
-    } else {
-        arr.push(numbers[i] * 2);
+    }
+    else if(i +1 == numbers.length){
+        arr.push(numbers[i]*2)
     }
 }
 console.log(arr);
