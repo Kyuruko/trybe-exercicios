@@ -14,11 +14,12 @@ for (j=0;j<numbers.length-1;j++){
     }
 }
 console.log(numbers)
-
+arr = []
 for (i=0; i<numbers.length;i++){
-    if(numbers[i+1] == NaN){
-        
+    if (i + 1 < numbers.length) {
+        arr.push(numbers[i] * numbers[i+1])
+    } else {
+        arr.push(numbers[i] * 2);
     }
-    numbers[i] = numbers[i]*numbers[i+1]
 }
-console.log(numbers)
+console.log(arr);
