@@ -114,3 +114,70 @@
 //   midDir +=1
 // }
 // console.log(output);
+
+
+
+
+// let num = 50
+// let resultado = 0;
+
+// for (i=0; i<=num; i++){
+//     resultado += num
+// }
+// console.log(`O resultado é: ${resultado}`)
+// let num = 151
+// let cont = 0
+// for(i=2; i<num;i++){
+//     if(i%3 === 0){
+//         cont +=1
+//     }
+// }
+// console.log(cont)
+// if(cont == 50){
+//     console.log("Mensagem Secreta")
+// }
+// else if(cont > 50){
+//     console.log("Há mais de 50 divisores")
+// }
+// if(cont < 50){
+//     console.log("Há menos de 50 divisores")
+// }
+
+
+// players = ["Player 1", "Player 2"]
+// jogadas = ["Papel", "Pedra", "Tesoura"]
+
+// for (i = 0; i< players.length; i++){
+//     for(j = 0; j<jogadas.length; j++){
+        
+//     }
+// }
+
+// let player1 = "papel"
+// let player2 = "pedra"
+// let pedra = 1
+// let tesoura = 2
+// let papel = 3
+
+// if(player1 == "papel" && player2 == "pedra"){
+//     console.log("Player 1 Won")
+// }
+
+// let idade = 18
+// let maiorDeIdade = (idade >= 18) ? console.log("A pessoa é maior de idade") || false: console.log("É menor de idade")
+
+// let carol = 20
+// let murilo = 25
+// let baeta = 27
+
+// if(carol < murilo && carol < baeta){
+//     console.log(`O mais novo é Carol`)
+// }
+
+// if(carol > murilo && murilo > baeta){
+//     console.log(`O mais novo é Murilo`)
+// }
+
+// if(baeta < murilo && baeta < carol){
+//     console.log(`O mais novo é Baeta`)
+// }
