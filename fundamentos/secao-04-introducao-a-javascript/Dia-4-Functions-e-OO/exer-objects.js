@@ -58,5 +58,3 @@
 // cont = leitor.livrosFavoritos[1].cont + leitor.livrosFavoritos[0].cont
 // console.log(`${leitor.nome} e possui ${cont} livros favoritos`)
 // console.log(`O livro favorito de ${leitor.nome} ${leitor.sobrenome} é '${leitor.livrosFavoritos[1].titulo}'.`)
-
-
