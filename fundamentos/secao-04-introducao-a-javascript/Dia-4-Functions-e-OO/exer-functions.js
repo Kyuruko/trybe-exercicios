@@ -1,17 +1,17 @@
-// arr = []
-// function palindromo(string){
-//     for (i = 0; i< string.length; i++){
-//         let tam = string.length-1
-//         if(string[i] == string[tam-i]){
-//             arr.push(string[i])
-//         }else{
-//             return console.log(false)
-//         }
-//     }
-//     return console.log(arr.join(''))
-// }
+arr = []
+function palindromo(string){
+    for (i = 0; i< string.length; i++){
+        let tam = string.length-1
+        if(string[i] == string[tam-i]){
+            arr.push(string[i])
+        }else{
+            return console.log(false)
+        }
+    }
+    return console.log(arr.join(''))
+}
 
-// palindromo("arara")
+palindromo("aibofobia")
 
 
 // function greaterNumber(arr){
@@ -30,22 +30,19 @@
 
 // function lessNumber(arr){
 //     let menor = 0
-//     let index = 0
 //     for (i = 0; i < 1; i++){
 //         for(j=0; j< arr.length; j++){
-//             if(arr[i]<arr[j]){
+//             if(arr[i]<arr[j]&& arr[i]< menor){
 //                 menor = arr[i]
-//                 index = i
-//             }else if(arr[i]>arr[j]){
+//             }else if(arr[i]>arr[j] && arr[j]< menor){
 //                 menor = arr[j]
-//                 index = j
 //             }
 //         }
 //     }
-// return console.log(menor, index)
+// return console.log(menor)
 // }
 
-// lessNumber([2, 4, 6, 7, 10, 0, -3])
+// lessNumber([2,-4, 4, -3, 7, 10, 0])
 
 // function moreChar(arr){
 //     let maiorString =''
