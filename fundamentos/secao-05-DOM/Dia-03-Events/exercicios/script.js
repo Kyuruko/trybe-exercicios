@@ -39,30 +39,30 @@ let createButton = (string) =>{
 }
 createButton('Feriados')
 
+
+
+
+
 let clickButton = () =>{
   const button = document.querySelector('#btn-holiday')
   button.addEventListener('click', bgHoliday)
 }
-let clickButtonUndo = () =>{
-  const button = document.querySelector('#btn-holiday')
-  button.addEventListener('click', bgReverseHoliday)
-}
+
 let bgHoliday = (event) =>{
   const holiday = document.querySelectorAll('.holiday')
   for(i=0;i<holiday.length;i++){
-    holiday[i].style.background = 'green'
+    if(holiday[i].style.background == 'green'){
+      holiday[i].style.background = 'rgb(238,238,238)'
+    }else{
+      holiday[i].style.background = 'green'
+    }
   }
-clickButtonUndo()
 }
+clickButton()
 
-let bgReverseHoliday = () =>{
-  const holiday = document.querySelectorAll('.holiday')
-  for(i=0;i<holiday.length;i++){
-    holiday[i].style.background = 'rgb(238,238,238)'
-  }
-clickButton()
-}
-clickButton()
+
+
+
 
 let createButtonFriday = (string) =>{
   let buttonDiv = document.querySelector('.buttons-container')
@@ -73,17 +73,25 @@ let createButtonFriday = (string) =>{
 }
 createButtonFriday('Sexta-Feira')
 
+
+
+
 document.querySelector('#btn-friday').addEventListener('click', function(){
   let sextou = document.querySelectorAll('.friday')
+  let arr = [4,11,18,25]
   for(i=0;i<sextou.length;i++){
-    sextou[i].innerText = "sextou"
+    if(sextou[i].innerText == "sextou"){
+      sextou[i].innerText = arr[i]
+    }else{
+      sextou[i].innerText = "sextou"
+    }
   }
 })
 
 
 const bunchLi = document.querySelector('#days')
 bunchLi.addEventListener('mouseover', function(event){
-  event.target.style.fontSize = '40px';
+  event.target.style.fontSize = '24px';
 });
 
 bunchLi.addEventListener('mouseout', function(event){
@@ -121,3 +129,23 @@ const setTaskClass = () => {
   });
 }
 setTaskClass()
+
+
+const setTaskDay = () =>{
+  let selectedTask = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;
+  days.addEventListener('click', (event) => {
+
+    let eventTargetColor = event.target.style.color;
+
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor; // Pega a cor de fundo do primeiro elemento salvo na variável "selectedTask" e salva na variável "color"
+      event.target.style.color = color; // atribui a cor salva na variável "color" ao evento alvo
+    } else if (eventTargetColor === taskColor) {
+      event.target.style.color = 'rgb(119,119,119)';  // Altera a cor de fundo do evento alvo para "rgb(119, 119, 119)"
+    }
+  });
+}
+setTaskDay()
