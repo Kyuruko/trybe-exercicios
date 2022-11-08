@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header>
+
+        </header>
+        <section class="container">
+            <form id="form" method="get">
+                <fieldset>
+                    <label for="name">Nome: </label>
+                    <input id="inp-name" id="name" name="nome" min="10" max="40" type="text">
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email: </label>
+                    <input id="inp-email" id="email" name="email" min="10" max="50" type="email">
+                </fieldset>
+                <fieldset>
+                    <input type="radio"> Cidade
+                    <input type="radio"> Campo
+                    <input type="radio"> Praia
+                    <input type="radio"> Montanhas
+                </fieldset>
+                <fieldset>
+                    <legend>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</legend>
+                    <legend>Espaço para digitar a resposta: </legend>
+                    <textarea name="texto" id="inp-textarea" maxlength="500" cols="50" rows="10"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Qual a melhor data para realizar sua viagem?</legend>
+                    <label for="date">Data: </label>
+                    <input id="inp-date" id="date" name="date" type="date">
+                </fieldset>
+                <fieldset>
+                    <legend>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</legend>
+                    <div>
+                        <input type="checkbox" name="check1" id="inp-checkbox-1">
+                        <label for="check1">Sim</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="check2" id="inp-checkbox-2">
+                        <label for="check2">Não</label>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section class="container-btn">
+            <button class="submitForm" form="form" type="submit">Enviar</button>
+            <button class="clear">Apagar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
